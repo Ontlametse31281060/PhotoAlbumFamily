@@ -3,17 +3,21 @@ import { MatToolbarModule} from "@angular/material/toolbar";
 import { MatButtonModule} from "@angular/material/button";
 import {NgModule} from "@angular/core";
 import {MatIconModule} from "@angular/material/icon";
-import { ToolbarComponent} from
+
 
 
 @NgModule({
-  imports: [CommonModule,
+  imports: [
+    CommonModule,
     MatToolbarModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    FlexLayoutModule,
+    AngularFireStorageModule,
+    AngularFirestoreModule
   ],
-  declarations: [ToolbarComponent]
-  exports: [ToolbarComponent]
+  declarations: [ToolbarComponent, MarginIconComponent, UploadDirective],
+  exports: [ToolbarComponent, MarginIconComponent, UploadDirective],
+  providers: [FileStorageService, FolderService, FileService]
 })
-
-export class SharedModule{ }
+export class SharedModule { }

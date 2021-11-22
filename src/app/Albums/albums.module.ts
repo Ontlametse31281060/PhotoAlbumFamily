@@ -6,7 +6,7 @@ import { AlbumsListComponent} from "./AlbumsList/AlbumsListComponent";
   imports:  [
     CommonModule
   ],
-  declarations: []
+  declarations: [],
+  exports: [ RouterModule ]
 })
-
-export class CustomerDashboardModule{}
+export class AppRoutingModule { }
