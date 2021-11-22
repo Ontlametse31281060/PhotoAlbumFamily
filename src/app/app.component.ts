@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'PhotoAlbumFamily';
+  navBarOpen = true;
+
+  toggleNav(){
+    this.navBarOpen  = !this.navBarOpen;
+  }
 }

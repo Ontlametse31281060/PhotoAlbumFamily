@@ -1,7 +1,12 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { Routes} from "@angular/router";
+import { CommonModule} from "@angular/common";
+import { RouterModule} from "@angular/router";
+import { AlbumsListComponent} from "./Albums/AlbumsList"
 
-const routes: Routes = [];
+const routes: Routes = [
+  {path: 'Albums', component: AlbumsListComponent}
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
